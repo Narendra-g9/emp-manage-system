@@ -1,0 +1,15 @@
+{
+  "name": "frontend-example",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "cd vite_app; npm run dev",
+    "build": "cd vite_app; npm run build",
+    "install": "cd vite_app; npm install"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "axios": "^1.4.0"
+  }
+}

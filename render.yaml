@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: cmp-api
+    runtime: python
+    buildCommand: bash build.sh
+    startCommand: gunicorn cmp.wsgi:application
+    envVars:
+      - key: DATABASE_URL
+        sync: false  # Set manually in Render dashboard
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DEBUG
+        value: "False"
+      - key: PYTHON_VERSION
+        value: "3.11.11"
+      - key: ALLOWED_HOSTS
+        value: ".onrender.com"

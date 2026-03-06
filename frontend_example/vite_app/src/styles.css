@@ -1,0 +1,19 @@
+body { background: #f8fafc; }
+.app-container { max-width: 900px; margin: 24px auto; }
+.card { box-shadow: 0 6px 20px rgba(0,0,0,0.05); }
+.employee-item { display:flex; align-items:center; justify-content:space-between; padding:12px 16px; border-bottom:1px solid #e9ecef; }
+.employee-meta { display:flex; gap:12px; align-items:center; }
+.small-muted { font-size:0.9rem; color:#6c757d; }
+.form-inline { display:flex; gap:8px; flex-wrap:wrap; align-items:center; }
+.form-inline input[type="text"], .form-inline input[type="number"]{ min-width:120px; }
+.actions button{ margin-left:8px; }
+
+/* Alerts */
+.app-alert { position: fixed; top: 16px; right: 16px; z-index: 1050; min-width: 280px; }
+
+/* Empty state */
+.empty-state { text-align: center; padding: 40px 16px; color: #6c757d; }
+.empty-state .bi { font-size: 48px; color: #dee2e6; margin-bottom: 8px; }
+
+/* Pagination */
+.pagination { justify-content: center; margin-top: 12px; }
